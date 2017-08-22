@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B32EBF01F4891F70086C078 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32EBEF1F4891F70086C078 /* Article.swift */; };
 		6BB5C3701F34271400816F90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5C36F1F34271400816F90 /* AppDelegate.swift */; };
 		6BB5C3721F34271400816F90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5C3711F34271400816F90 /* ViewController.swift */; };
 		6BB5C3751F34271400816F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB5C3731F34271400816F90 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B32EBEF1F4891F70086C078 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		6BB5C36C1F34271400816F90 /* supApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = supApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB5C36F1F34271400816F90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BB5C3711F34271400816F90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B6DD4D11F3F280F00F1D8E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6BB5C3711F34271400816F90 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6B6DD4D21F3F281500F1D8E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B32EBEF1F4891F70086C078 /* Article.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6B6DD4D31F3F281A00F1D8E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6B6DD4D41F3F282400F1D8E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		6BB5C3631F34271400816F90 = {
 			isa = PBXGroup;
 			children = (
@@ -79,8 +111,11 @@
 		6BB5C36E1F34271400816F90 /* supApp */ = {
 			isa = PBXGroup;
 			children = (
+				6B6DD4D21F3F281500F1D8E9 /* Model */,
+				6B6DD4D31F3F281A00F1D8E9 /* View */,
+				6B6DD4D11F3F280F00F1D8E9 /* Controller */,
+				6B6DD4D41F3F282400F1D8E9 /* Resources */,
 				6BB5C36F1F34271400816F90 /* AppDelegate.swift */,
-				6BB5C3711F34271400816F90 /* ViewController.swift */,
 				6BB5C3731F34271400816F90 /* Main.storyboard */,
 				6BB5C3791F34271400816F90 /* Assets.xcassets */,
 				6BB5C37B1F34271400816F90 /* LaunchScreen.storyboard */,
@@ -149,6 +184,7 @@
 				TargetAttributes = {
 					6BB5C36B1F34271400816F90 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GQ6NMDVGBA;
 						ProvisioningStyle = Automatic;
 					};
 					6BB5C3821F34271500816F90 = {
@@ -202,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B32EBF01F4891F70086C078 /* Article.swift in Sources */,
 				6BB5C3721F34271400816F90 /* ViewController.swift in Sources */,
 				6BB5C3701F34271400816F90 /* AppDelegate.swift in Sources */,
 				6BB5C3781F34271400816F90 /* supApp.xcdatamodeld in Sources */,
@@ -344,8 +381,10 @@
 		6BB5C38D1F34271500816F90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = GQ6NMDVGBA;
 				INFOPLIST_FILE = supApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeilPatel.supApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,8 +395,10 @@
 		6BB5C38E1F34271500816F90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				DEVELOPMENT_TEAM = GQ6NMDVGBA;
 				INFOPLIST_FILE = supApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NeilPatel.supApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +453,7 @@
 				6BB5C38E1F34271500816F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BB5C38F1F34271500816F90 /* Build configuration list for PBXNativeTarget "supAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +462,7 @@
 				6BB5C3911F34271500816F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
